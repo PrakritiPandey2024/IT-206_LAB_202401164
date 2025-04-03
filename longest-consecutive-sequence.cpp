@@ -5,7 +5,6 @@ public:
         int longestStreak = 0;
 
         for (int num : numSet) {
-            // Only check for start of sequence
             if (numSet.find(num - 1) == numSet.end()) {
                 int currentNum = num;
                 int currentStreak = 1;
